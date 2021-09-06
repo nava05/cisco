@@ -1,0 +1,143 @@
+<div class="container">
+    <!-- <div class="d-flex">
+        <ul class="list-inline mx-auto justify-content-center">
+            <li class="list-inline-item"><span class="dot-md"></span></li>
+            <li class="list-inline-item" *ngIf='isGetStarted'><span class="dot-md"></span></li>
+            <li class="list-inline-item"><span class="active-dot"></span></li>
+            <li class="list-inline-item"><span class="dot-md"></span></li>
+        </ul>
+    </div> -->
+    <!-- <div class="text-center block-heading">
+        <h6 class="mb-1">
+            Provide your shipping details
+        </h6>
+    </div> -->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h6 class="text-center p-2">
+            </h6>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <form class="p-3" [formGroup]='shippingForm'>
+                                <div class="form-group row">
+                                    <div class="col-md"><label class="required" for="">First Name</label></div>
+                                    <div class="col-md">
+                                        <input type="text" class="form-control" formControlName='firstName'
+                                            placeholder="Enter First Name">
+                                    </div>
+                                    <div class="col-md"></div>
+                                </div>
+                                <br>
+
+                                <div class="form-group row">
+                                    <div class="col-md"><label class="required" for="">Last Name</label></div>
+                                    <div class="col-md">
+                                        <input type="text" formControlName='lastName' class="form-control"
+                                            placeholder="Enter Last Name">
+                                    </div>
+                                    <div class="col-md"></div>
+                                </div>
+                                <br>
+                                <div class="form-group row">
+                                    <div class="col-md"><label class="required" for="">Country</label></div>
+                                    <div class="col-md">
+                                        <select class="form-control" formControlName='country'>
+                                            <option>Australia</option>
+                                            <option>New Zealand</option>
+                                            <option>Singapore</option>
+                                            <option>Philippines</option>
+                                            <option>Indonesia</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md"></div>
+                                </div>
+                                <br>
+                                <div class="form-group row">
+                                    <div class="col-md">
+                                        <label class="required" for="">Company Name</label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="email" class="form-control" formControlName='companyName'
+                                            placeholder="Enter Company Name">
+                                    </div>
+                                    <div class="col-md"></div>
+                                </div>
+
+                                <br>
+                                <div class="form-group  row">
+                                    <div class="col-md">
+                                        <label class="required" for="">Job Title</label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="email" class="form-control" formControlName='jobTitle'
+                                            placeholder="Enter Job Title">
+                                    </div>
+                                    <div class="col-md"></div>
+                                </div>
+                                <br>
+                                <div class="form-group row">
+                                    <div class="col-md">
+                                        <label class="required" for="">Business Email</label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="email" class="form-control" email="true"
+                                            formControlName='businessEmail'
+                                            [ngClass]="{ 'is-invalid': f.businessEmail.touched && f.businessEmail.errors }"
+                                            placeholder="Enter Business Email">
+                                        <div *ngIf="f.businessEmail.touched && f.businessEmail.errors"
+                                            class="invalid-feedback">
+                                            <div *ngIf="f.businessEmail.errors.required">Email is required</div>
+                                            <div *ngIf="f.businessEmail.errors.email">Email must be a valid email
+                                                address</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md"></div>
+                                </div>
+                                <br>
+                                <div class="form-group row">
+                                    <div class="col-md">
+                                        <label class="required" for="">Business Phone</label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="text" phone class="form-control" formControlName='businessPhone'
+                                            placeholder="Enter Business Phone"
+                                            [ngClass]="{ 'is-invalid': f.businessPhone.touched && f.businessPhone.errors }">
+                                        <div *ngIf="f.businessPhone.touched && f.businessPhone.errors"
+                                            class="invalid-feedback">
+                                            <div *ngIf="f.businessPhone.errors.required">Phone no. is required</div>
+                                            <div *ngIf="f.businessPhone.errors.businessPhone">Phone no. must be valid
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md"></div>
+                                </div>
+                                <br>
+                                <div class="form-group row">
+                                    <div class="col-md">
+                                        <label for="">Leave your message here</label>
+                                    </div>
+                                    <div class="col-md"> <textarea type="email" formControlName='message'
+                                            class="form-control" placeholder=""></textarea>
+                                    </div>
+                                    <div class="col-md"></div>
+                                </div>
+                                <br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center mt-4 mb-4">
+            <button class="btn btn-transparent btn-md btn-mr" (click)='onPrevious()'>Back</button>
+            <button class="btn btn-primary btn-md" [disabled]='shippingForm.invalid' (click)='onNext()'>Proceed</button>
+        </div>
+    </div>
+</div>

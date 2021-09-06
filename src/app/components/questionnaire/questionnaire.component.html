@@ -1,0 +1,60 @@
+<div class="container recommendation">
+    <!-- <div class="d-flex">
+        <ul class="list-inline mx-auto justify-content-center">
+            <li class="list-inline-item"><span class="active-dot"></span></li>
+            <li class="list-inline-item"><span class="dot-md"></span></li>
+            <li class="list-inline-item"><span class="dot-md"></span></li>
+            <li class="list-inline-item"><span class="dot-md"></span></li>
+        </ul>
+    </div> -->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="text-center" data-aos="fade-down" data-aos-duration="500">
+                <h4 style="font-weight: normal;color: #00bceb;"> Are you ready<span>&nbsp;<i
+                            class="bi bi-question-circle"></i></span>
+                </h4>
+                <h6 style="font-weight: normal;" class="p-2"> Answer a few questions, and we will help you identify the
+                    right security bundle. </h6>
+            </div>
+            <div class="card shadow-md p-2 mt-4 bg-white" data-aos="fade-up" data-aos-duration="500"
+                *ngFor="let que of questions; let index = index">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fa fa-hand-o-right fa-lg m-3"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-2">
+                                    <div>
+                                        <p class="question">{{que.questionValue}}</p>
+                                    </div>
+                                    <div>
+                                        <div class="row" *ngFor="let option of que.options;">
+                                            <label class="radio-inline pr-2 options">
+                                                <input type="radio" (change)='changeHandler(que, option)'
+                                                    name="radio-{{index}}"
+                                                    [checked]="que.selectedOptionId == option.optionId">
+                                                <span class="pl-1">{{option.optionValue}}</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 icon-size">
+                            <i [ngClass]="!que?.selected ? '' : 'bi bi-check-circle-fill'"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4" style="margin-top: 3rem;">
+            <div class="col-md-12 text-center">
+                <button class="btn btn-transparent btn-md btn-mr" (click)='onCancel()'>Cancel</button>
+                <button class="btn btn-primary btn-md" [disabled]='!canProceed' (click)='onProceed()'>Proceed</button>
+            </div>
+        </div>
+    </div>
+</div>

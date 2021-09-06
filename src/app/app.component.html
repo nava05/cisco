@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container-fluid" style="padding: 0 30px;">
+        <div class="d-flex flex-column align-items-center brand-container" data-aos="fade-right" data-aos-duration="500">
+            <a class="navbar-brand" href=""><img src="../assets/img/images/Cisco-Logo.jpeg" alt="..." /></a>
+            <div class="d-flex align-items-center powered-by-container">
+                <a class="powered-brand" href="">
+                    <span class="powered-label">powered by</span>
+                    <img src="https://www.westconcomstor.com/content/dam/wcgcom/Global/CorpSite/main/westcon-comstor.png"
+                        alt="..." />
+                </a>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" data-aos="fade-left" data-aos-duration="500">
+            <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" [routerLink]="['']" routerLinkActive="active-link"
+                        [routerLinkActiveOptions]="{exact: true}">Why Cybersecurity?</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/get-started']" routerLinkActive="active-link"
+                        [routerLinkActiveOptions]="{exact: true}">Get Started</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/products']" routerLinkActive="active-link"
+                        [routerLinkActiveOptions]="{exact: true}">Products</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/contact-us']" routerLinkActive="active-link"
+                        [routerLinkActiveOptions]="{exact: true}">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main-content-layout">
+    <router-outlet></router-outlet>
+</div>

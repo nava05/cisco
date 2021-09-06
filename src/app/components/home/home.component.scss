@@ -1,0 +1,146 @@
+@import url(//db.onlinewebfonts.com/c/478038efdf39c0b463617131aed0d86d?family=CiscoSans+ExtraLight);
+
+.modal-body h2 {
+    color: #00bceb;
+}
+
+.modal-body img {
+    float: left;
+    height: 60%;
+    width: 60%;
+    margin-right: 32px;
+}
+
+.modal-body p {
+    margin-top: 32px;
+    text-align: justify;
+}
+
+.timeline-panel {
+    img {
+        height: auto;
+        width: 100%;
+        max-width: 220px;
+    }
+}
+
+.timeline-panel .img-umbrella {
+    height: auto;
+    width: 100%;
+    max-width: 220px;
+}
+
+.bg-blue {
+    color: #0d274d;
+    background-color: #f2fbfd;
+}
+
+.text-muted-cs-reverse {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.btn-green {
+    background-color: #6dbd49;
+}
+
+.green {
+    color: #6dbd49;
+}
+
+.security-img {
+    width: 70px;
+    height: 71px;
+}
+
+.doller-img {
+    width: 40px;
+    height: 71px;
+}
+
+.solution-img,
+.security-system-img {
+    width: 100%;
+    height: auto;
+}
+
+.one-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.two-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.three-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.button-pill-primary {
+    background-color: #6dbd49;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.button-pill-primary a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.button-pill-secondary a {
+    text-decoration: none;
+    color: #6dbd49 !important;
+}
+
+.button-pill-secondary {
+    background-color: #fff;
+    border: 1px solid #6dbd49;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.img-container {
+    display: block;
+    margin: auto;
+}
+
+.smb-title {
+    padding-top: 3rem;
+}
+
+header {
+    button {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.umbrella-timeline {
+    float: right;
+}
+.meraki-duo-timeline {
+    float: left;
+}
+
+.small {
+    font-size: 20px !important;
+}

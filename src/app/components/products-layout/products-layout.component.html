@@ -1,0 +1,21 @@
+<div class="container products-layout">
+    <div class="row">
+        <div class="col-md-12 mt-3">
+            <mat-horizontal-stepper [disableRipple]="true" [linear]="isLinear" [selectedIndex]='selectedIndex' #stepper>
+                <mat-step [stepControl]="productsFormGroup" label="Products">
+                    <ng-template matStepperIcon="edit">
+                        <span class="fa fa-check"></span>
+                    </ng-template>
+                    <app-products #products [products]='allProducts' (next)='onNext()'></app-products>
+                </mat-step>
+                <mat-step [stepControl]="shippingFormGroup" label="Shipping Details">
+                    <app-shipping-details #shipping (next)='onNext()' (previous)='onPrevious()'></app-shipping-details>
+                </mat-step>
+                <mat-step [stepControl]="reviewFormGroup" label="Review">
+                    <app-review-order #review [products]='allProducts' (previous)='onPrevious()' (submit)='onSubmit()'>
+                    </app-review-order>
+                </mat-step>
+            </mat-horizontal-stepper>
+        </div>
+    </div>
+</div>

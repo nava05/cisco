@@ -1,0 +1,126 @@
+[
+  {
+    "questionId": 1,
+    "questionValue": "How would you rate your current cyber security posture?",
+    "type": "radio",
+    "selected": "",
+    "selectedOptionId" : "0",
+    "isMandatory": true,
+    "options": [
+      {
+        "optionId": "11",
+        "optionValue": "We have nothing in place to stop a cyber attack.",
+        "productAssociated": [
+          "Meraki MX",
+          "Umbrella",
+          "Duo"
+        ]
+      },
+      {
+        "optionId": "12",
+        "optionValue": "We've put in a few security measures but I know its not enough.",
+        "productAssociated": []
+      },
+      {
+        "optionId": "13",
+        "optionValue": "We're solid but we are always looking for improvements.",
+        "productAssociated": []
+      }
+    ]
+  },
+  {
+    "questionId": 2,
+    "questionValue": "What are your current business concerns surrounding cyber security?",
+    "type": "radio",
+    "selected": "",
+    "selectedOptionId" : "0",
+    "isMandatory": true,
+    "options": [
+      {
+        "optionId": "21",
+        "optionValue": "Clicking on a questionable link that takes you to a compromised website.",
+        "productAssociated": [
+          "Umbrella"
+        ]
+      },
+      {
+        "optionId": "22",
+        "optionValue": "Someone impersonating the boss or an employee.",
+        "productAssociated": [
+          "Duo"
+        ]
+      },
+      {
+        "optionId": "23",
+        "optionValue": "Hackers entering our front or back door.",
+        "productAssociated": [
+          "Umbrella"
+        ]
+      },
+      {
+        "optionId": "24",
+        "optionValue": "Not knowing that we are safe doing business in the cloud.",
+        "productAssociated": [
+          "Umbrella"
+        ]
+      },
+      {
+        "optionId": "25",
+        "optionValue": "All of the above",
+        "productAssociated": [
+          "Meraki MX",
+          "Umbrella",
+          "Duo"
+        ]
+      }
+    ]
+  },
+  {
+    "questionId": 3,
+    "questionValue": "Current security solutions I have purchased recently and have covered?",
+    "type": "radio",
+    "selected": "",
+    "selectedOptionId" : "0",
+    "isMandatory": true,
+    "options": [
+      {
+        "optionId": "31",
+        "optionValue": "Firewall",
+        "productAssociated": []
+      },
+      {
+        "optionId": "32",
+        "optionValue": "SD WAN",
+        "productAssociated": [
+          "Umbrella",
+          "Duo"
+        ]
+      },
+      {
+        "optionId": "33",
+        "optionValue": "Security internet gateway",
+        "productAssociated": [
+          "Meraki MX",
+          "Duo"
+        ]
+      },
+      {
+        "optionId": "34",
+        "optionValue": "Multi factor authentication",
+        "productAssociated": [
+          "Meraki MX",
+          "Umbrella"
+        ]
+      },
+      {
+        "optionId": "35",
+        "optionValue": "I have none of these or any that are good enough",
+        "productAssociated": [
+          "Meraki MX",
+          "Umbrella",
+          "Duo"
+        ]
+      }
+    ]
+  }
+]

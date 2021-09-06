@@ -1,0 +1,60 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">
+        <img class="mt-2 mb-2 infoLogo" *ngIf='product.productId == 101' height="30" [src]="product.infoLogo">
+        <img class="mt-2 mb-2 infoLogo" *ngIf='product.productId == 102' [src]="product.infoLogo" width="215"
+            height="40">
+        <img class="mt-2 mb-2 infoLogo" *ngIf='product.productId == 103' [src]="product.infoLogo" height="40">
+    </h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <table>
+        <tr>
+            <td><b>SKU:</b></td>
+            <td>{{product.sku}} <img class="ml-4" [src]='product.skuLogo' height="auto" width="100"></td>
+        </tr>
+        <tr>
+            <td><b>Datasheet:</b></td>
+            <td>
+                <a target="blank" [href]="product.datasheet">{{product.datasheet}}</a>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Description:</b></td>
+            <td>{{product.description}}</td>
+        </tr>
+        <tr *ngIf='product.specs && product.productId == 101'>
+            <td><b>Specs:</b></td>
+            <td>
+                <table class="specs">
+                    <tr>
+                        <td></td>
+                        <td><b>MX75</b></td>
+                    </tr>
+                    <tr>
+                        <td>Recommended Use Case</td>
+                        <td>Small branch with up to 200 users</td>
+                    </tr>
+                    <tr>
+                        <td>Max site-to-site VPN Throughput</td>
+                        <td>500 Mbps</td>
+                    </tr>
+                    <tr>
+                        <td>Max Concurrent site-to-site VPN Tunnels</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>Max Stateful Firewall Throughput</td>
+                        <td>1 Gbps</td>
+                    </tr>
+                    <tr>
+                        <td>Max Throughput with All Advanced Security features</td>
+                        <td>750 Mbps</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>

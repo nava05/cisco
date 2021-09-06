@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cisco-cyber-security": {
+      "hosting": {
+        "cisco-web-security": [
+          "cisco-cyber-security"
+        ]
+      }
+    }
+  }
+}

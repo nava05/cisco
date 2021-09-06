@@ -1,0 +1,70 @@
+[{
+    "productId": 101,
+    "headerLogo": "/assets/img/meraki_logo.png",
+    "infoLogo": "/assets/img/images/meraki-logo.png",
+    "productName": "Meraki MX",
+    "price": 1226,
+    "currency": "$",
+    "plan": "monthly",
+    "user": 1,
+    "recommended": false,
+    "logo": "/assets/img/images/Cisco Secure_Firewall-Light.png",
+    "title": "Meraki MX",
+    "sku": "MX75-HW",
+    "skuLogo": "/assets/img/MX75.jpg",
+    "datasheet": "https://documentation.meraki.com/MX/MX_Overviews_and_Specifications/MX75_Datasheet",
+    "description": "The Meraki MX75 is an enterprise security appliance designed for distributed deployments that require remote administration across Medium branch environments.It is ideal for network administrators who demand both ease of deployment and a state - of -the - art feature set.The Meraki Dashboard allows for simple and easy deployment of the MX75 with minimal pre - configuration in almost any location.",
+    "specs": "from section“ Throughput and Capabilities”(for MX75 only)– see attached “ MX75specs” screengrab(but can pull data from the linked datasheet)",
+    "benefit": "This is benefit1",
+    "points": [
+      "Secure SD-WAN appliance with 4G backup",
+      "Cloud managed and simple to deploy"
+    ]
+  },
+  {
+    "productId": 102,
+    "headerLogo": "/assets/img/umbrella.JPG",
+    "infoLogo": "/assets/img/images/umbrella-logo.svg",
+    "productName": "Umbrella",
+    "price": 37,
+    "currency": "$",
+    "plan": "monthly",
+    "user": 1,
+    "recommended": false,
+    "logo": "/assets/img/images/Cisco Secure_Umbrella - Light.png",
+    "title": "Cisco Umbrella - SIG Essentials",
+    "sku": "UMB-SIG-ESS-K9",
+    "skuLogo": "/assets/img/UMB-SIG-ESS-K9.png",
+    "datasheet": "https://learn-umbrella.cisco.com/datasheets/cisco-umbrella-secure-internet-gateway-sig-essentials",
+    "description": "The Umbrella Secure Internet Gateway (SIG) Essentials package offers a broad set of security functions that until now required  separate firewall, web gateway, threat intelligence, and cloud access security broker (CASB) solutions. By enabling all of this from a single,  cloud-delivered service and dashboard, Umbrella provides higher security efficacy with less effort and less resources.",
+    "specs": "",
+    "benefit": "This is benefit2",
+    "points": [
+      "Secure Internet Gateway first line of defense",
+      "Reduce malware by 75%"
+    ]
+  },
+  {
+    "productId": 103,
+    "headerLogo": "/assets/img/duo.jpg",
+    "infoLogo": "/assets/img/images/cisco_duo_logos2.png",
+    "productName": "Duo",
+    "price": 100,
+    "currency": "$",
+    "plan": "monthly",
+    "user": 1,
+    "recommended": false,
+    "logo": "/assets/img/images/Cisco Secure_Access by Duo-Light.png",
+    "title": "Cisco Duo Multi-Factor Authentication",
+    "sku": "DUO-MFA",
+    "skuLogo": "/assets/img/duo.jpg",
+    "datasheet": "https://www.cisco.com/c/en_au/products/security/adaptive-multi-factor-authentication.html",
+    "description": "Multi-factor authentication from Cisco's Duo protects your applications by using a second source of validation, like a phone or token, to verify user identity before granting access. Duo is engineered to provide a simple, streamlined login experience for every user and application, and as a cloud-based solution, it integrates easily with your existing technology.",
+    "specs": "",
+    "benefit": "This is benefit3",
+    "points": [
+      "A multi-factor authentication (MFA) solution",
+      "Protection for all users, devices and applications"
+    ]
+  }
+]

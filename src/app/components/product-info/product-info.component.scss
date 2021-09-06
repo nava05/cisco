@@ -1,0 +1,40 @@
+button {
+    font-size: 40px;
+    outline: none;
+    :focus {
+        outline: none;
+    }
+}
+
+table {
+    font-family: var(--cisco-font-extra-light);
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+.infoLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+b {
+    color: grey;
+}
+
+.specs {
+    font-size: 14px;
+    td,
+    th {
+        border: 1px solid #eee;
+        text-align: left;
+        padding: 8px;
+    }
+}
